@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./FB_IMG_1448095736687.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            /* background-size: auto; */
+        }
+        .display{
+            display: block;
+            background-image: linear-gradient(110deg,red 50%, yellow 50%);
+            height: 150px;
+            text-align: center;
+            padding-top: 2em;
+            
+        }
+        ul.display1 li{
+            display: inline-block;
+            background-color: hsla(120, 50%, 45%, 0.7);
+        }
+        .display2{
+            display: none;
+        }
+        .display3{
+            visibility: hidden;
+        }
+        div.ex1 {
+            width: 700px;
+            margin: auto;
+            border: 3px solid #73AD21;
+            background-color: rgb(255, 255, 0);
+            }
+
+            div.ex2 {
+            max-width: 600px;
+            margin: auto;
+            border: 3px solid #73AD21;
+            background-color: rgb(0, 0, 0);
+            color:red;
+            }
+            .overflow{
+                height: 100px;
+                width: 200px;
+                border: 2px solid green;
+                /* overflow: hidden;
+                overflow: auto; */
+                overflow-y: scroll;
+                background-color: rgba(180, 120, 20, 0.7);
+                
+            }
+            p {
+                font-size: 16px;
+                line-height: 2em;
+                }
+
+            div {
+                font-size: 30px;
+                border: 1px solid black;
+                }
+
+            span {
+                font-size: 0.5em;
+                }
+            div h1{
+                    font-size: 1.5em;
+                }
+            html {
+                font-size:16px;
+                }
+
+            div {
+                font-size: 3rem;
+                border: 1px solid black;
+                }
+
+            #top-div {
+                font-size: 2rem;
+                border: 1px solid red;
+                }
+    </style>
+</head>
+<body>
+    <h1 class="display">Hello! How r u</h1>
+    <ul class="display1">
+        <li>gopi</li>
+        <li>dhoni</li>
+        <li>CSK</li>
+    </ul>
+    <p class="display2">Hiding an element can be done by setting the display property to none</p>
+    <p class="display3">However, the element will still take up the same space as before. 
+       The element will be hidden, but still affect the layout:</p>
+    <p>Hi Hello</p>
+    
+    <h2>CSS Max-width</h2>
+    <div class="ex1">This div element has width: 500px;</div><br/>
+    <div class="ex2">This div element has max-width: 500px;</div>
+    <p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between 
+        the two divs!</p>
+
+    <h2>CSS Overflow</h2>
+    <p class="overflow">By default, the overflow is visible, meaning that it is not clipped and it renders outside the 
+        element's box: the overflow is visible, meaning that it is not clipped the overflow is visible, 
+        meaning that it is not clipped</p>
+
+        <!-- units -->
+    <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+    <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+    <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+    <div>The font-size of the div element is set to 30px. <span>The span element inside the div element 
+         has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.
+    <h1>This is Heading.</h1>
+    </div>
+    <p>The font-size of this document is 16px.</p>
+
+    <div id="top-div">
+    The font-size of this div element is 2rem, which translates to 2 x the browser's font size.
+    <div>The font-size of this div element is 3rem. It also shows that it does not inherit from its parent 
+        element font size.</div>
+    </div>
+
+    <p>The rem unit sets the font-size relative to the browsers base font-size,
+        and will not inherit from its parents.</p>
+</body>
+</html>
