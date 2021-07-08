@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #solid{
+            border: 3px solid red;
+            padding-left: 20px;
+            border-radius: 5px;
+        }
+        .double{
+            border-style: double;
+            border-color: blue;
+            padding: 30px;
+            margin: 20px;
+        }
+        .dashed{
+            border-style: dashed;
+            border-color: brown;
+            padding : 15px;
+        }
+        .outset{
+            border-style: outset;
+        }
+        [href]{
+        text-decoration: none;
+        }
+
+        [href *='https']{
+            color: green;
+        }
+
+        [href ^='www']{
+            color: black;
+        }
+
+        [href $='co']{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="double">This is a border</h1>
+    <p id="solid">Vakeel Saab (transl. Lawyer Sir) is a 2021 Indian Telugu-language legal drama film directed by 
+        Venu Sriram and produced by Dil Raju and Sirish under Sri Venkateswara Creations in association with Bayview Projects. A remake of the 2016 Hindi film Pink, the film stars Pawan Kalyan, Nivetha Thomas, Anjali, Ananya Nagalla, Prakash Raj, and Shruthi Haasan.</p>
+    <h2 class="dashed">RRR is an upcoming Indian Telugu-language period action drama film directed by S. S. Rajamouli.</h2>
+    <h3 class="outset">Hidden Border</h3>
+    <a href="https://www.w3schools.com">w3schools.com</a><br/>
+    <a href="http://www.w3schools.com">w3schools.com</a><br/>
+    <a href="www.w3schools.com">w3schools.com</a><br/>
+    <a href="www.facebook.co">facebook.com</a>
+
+</body>
+</html>
